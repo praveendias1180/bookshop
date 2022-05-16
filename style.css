@@ -1,5 +1,67 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
 .book{
     border: 1px solid #ccc;
-    margin: 10px;
+    margin: 10px 30px 30px 10px;
+    padding: 10px 10px 10px 10px;
+    max-width: 400px;
+}
+
+.book-title{
+    color:#333;
+    font-size: 2rem;
+    margin:10px 0 10px 0;
+    overflow-x: hidden;
+}
+
+.book-cover{
+    max-width: 100%;
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.book-cover-div{
+    border: 1px solid #ccc;
+    border-radius: 10px;
     padding: 10px;
+}
+
+.book-author{
+    display: inline;
+    font-size: 1.5rem;
+    
+}
+
+.book-author-link{
+    margin: 5px 0 0 0;
+}
+
+.author-image{
+    max-width: 100%;
+    width: 100%;
+    border-radius: 50%;
+    display: block;
+}
+
+.author-image-div{
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 10px;
+    max-width: 100px;
+    float: left;
+    margin: 10px 10px 10px 0;
+}
+
+
+.book-description{
+    margin: 10px 0;
+    display: inline;
+}
+
+.book-read-more{
+    margin: 5px 0 0 0;
 }
