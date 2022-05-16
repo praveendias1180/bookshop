@@ -6,7 +6,7 @@ body{
 
 header{
     background-color: #333;
-    padding: 10px;
+    padding: 20px;
     color: #fff;
 }
 
@@ -39,6 +39,7 @@ table{
     font-family: 'Bungee Outline', cursive;
     letter-spacing: 3px;
     font-size: 3rem;
+    text-shadow: 6px 6px 6px #000000;
 }
 
 #book-shop-tagline{
@@ -52,7 +53,8 @@ table{
 }
 
 .book{
-    border: 2px dashed #ccc;
+    border: 1px dashed #ddd;
+    border-radius: 10px;
     margin: 10px 30px 30px 10px;
     padding: 20px;
     max-width: 300px;
@@ -62,10 +64,11 @@ table{
 .book-title{
     color:#333;
     font-size: 2rem;
-    margin:10px 0 10px 0;
+    margin:20px 0 20px 0;
     overflow-x: hidden;
     font-family: 'Bungee Outline', cursive;
     letter-spacing: 3px;
+    text-shadow: 4px 4px 4px #ddd;
 }
 
 .book-cover{
@@ -76,16 +79,23 @@ table{
 }
 
 .book-cover-div{
-    border: 1px solid #ccc;
+    border: 1px dashed #ddd;
     border-radius: 10px;
     padding: 10px;
 }
 
 .book-cover-div:hover{
-    animation:author_hover;
-    animation-duration: 4s;
+    transform: rotate(-3deg);
+    animation:book_hover;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
 }
+
+@keyframes book_hover {
+    0%   {background-color: white;}
+    50%  {background-color: black;}
+
+  }
 
 .book-author{
     display: inline;
@@ -94,7 +104,7 @@ table{
 }
 
 .book-author-link{
-    margin: 5px 0 0 0;
+    margin: 5px 0 10px 0;
 }
 
 .author-image{
@@ -114,6 +124,9 @@ table{
 }
 
 .author-image-div:hover{
+    transform: scale(2.5) ;
+    border: none;
+    box-shadow: 10px 10px 10px #333;
     animation:author_hover;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -121,9 +134,7 @@ table{
 
 @keyframes author_hover {
     0%   {background-color: white;}
-    25%  {background-color: black;}
-    50%  {background-color: yellow;}
-    100% {background-color: white;}
+    50%  {background-color: black;}
   }
 
 
