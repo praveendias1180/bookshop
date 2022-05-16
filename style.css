@@ -48,10 +48,11 @@ table{
 }
 
 .book{
-    border: 1px solid #ccc;
+    border: 2px dashed #ccc;
     margin: 10px 30px 30px 10px;
-    padding: 10px 10px 10px 10px;
+    padding: 20px;
     max-width: 300px;
+    box-shadow: 10px 10px 10px #eee;
 }
 
 .book-title{
@@ -72,6 +73,12 @@ table{
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 10px;
+}
+
+.book-cover-div:hover{
+    animation:author_hover;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 
 .book-author{
@@ -99,6 +106,19 @@ table{
     float: left;
     margin: 10px 10px 10px 0;
 }
+
+.author-image-div:hover{
+    animation:author_hover;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes author_hover {
+    0%   {background-color: white;}
+    25%  {background-color: black;}
+    50%  {background-color: yellow;}
+    100% {background-color: white;}
+  }
 
 
 .book-description{
