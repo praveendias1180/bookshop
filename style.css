@@ -9,6 +9,30 @@ header{
     color: #fff;
 }
 
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
+}
+
+th, td {
+    border: 2px solid #fff;
+    padding: 15px;
+}
+
+table{
+    margin: 25px;
+    border-collapse: collapse;
+}
+
+#ol-list, #ol-p{
+    text-align: right;
+    padding-right: 20px;
+}
+
 #book-shop-heading{
     margin: 20px 0 20px 0;
 }
@@ -17,12 +41,17 @@ header{
     margin: 0 0 20px 0;
 }
 
+#books{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 .book{
     border: 1px solid #ccc;
     margin: 10px 30px 30px 10px;
     padding: 10px 10px 10px 10px;
     max-width: 300px;
-    float: left;
 }
 
 .book-title{
